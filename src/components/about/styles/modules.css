@@ -114,3 +114,19 @@
     padding: 0 2rem;
     color: #cfcf;
 }
+
+@media screen and (max-width: 768px) {
+    .second::before ,
+    .module::before {
+        display: none;
+    }
+    .second, 
+    .module {
+        flex-direction: column;
+    }
+    .module-inner-right,
+    .module-inner-left {
+        height: max-content;
+        padding: 1.4rem 0;
+    }
+}

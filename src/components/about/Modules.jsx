@@ -44,8 +44,7 @@ const modulesInfo = [
 
 const ContentCards = ( props) => {
     return (
-        <div className={props.class} key={props.key}>
-            {console.log (props)}
+        <div className={props.class} key={props.id}>
             <div className="module-inner-left" style={{
                 background: `linear-gradient(to right, #00000065,#00000062), url(${props.img}) no-repeat`,
                 backgroundSize: 'cover',
@@ -74,7 +73,7 @@ const Modules = () => {
                     modulesInfo.map ((moduleInfoItem) => (
                        <ContentCards 
                             img={moduleInfoItem.img} 
-                            key={moduleInfoItem.key} 
+                            id={moduleInfoItem.key} 
                             class={moduleInfoItem.class}
                             heading={moduleInfoItem.heading}
                             paragraph={moduleInfoItem.paragraph}
