@@ -1,0 +1,116 @@
+.module-hold {
+    min-height: 2rem;
+    width: 100%;
+}
+
+.module-hold h2 {
+    padding: 2rem;
+    text-transform: capitalize;
+    color: #151740;
+    text-align: center;
+}
+
+.module-container {
+    position: relative;
+    margin-top: 1rem;
+    min-height: 3rem;
+    background-color: #151740;
+    color: #fcfcfc;
+}
+.module-container::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: -6rem;
+    border: solid transparent 7rem;
+    border-left-color: #151740;
+    border-bottom-color: #151740;
+}
+.module {
+    margin-top: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.module::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 25.6%;
+    height: 5rem;
+    width: 5rem;
+    transform: rotate(45deg);
+    background-color: #151740;
+    /* background-color: #3b3d77; */
+    opacity: 1;
+    /* z-index: -1; */
+} 
+.module > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.module-inner-left {
+    flex: .4;
+    height: 17rem;
+}
+.module h2 {
+    text-transform: uppercase;
+    color: #fcfcfc;
+}
+.module .para {
+    padding: 0 5rem;
+}
+.module-inner-right {
+    flex: 1;
+    height: 17rem;
+}
+.module > div > div {
+    padding: 0 2rem;
+    color: #cfcf;
+}
+
+
+.second {
+    margin-top: 3rem;
+    position: relative;
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    background-color: #292b6925;
+}
+.second::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: 25.6%;
+    height: 5rem;
+    width: 5rem;
+    transform: rotate(45deg);
+    background-color: #292b69;
+    opacity: 1;
+} 
+.second > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-inner-left {
+    flex: .4;
+    height: 17rem;
+}
+.second h2 {
+    text-transform: uppercase;
+    color: #fcfcfc;
+}
+.second .para {
+    padding: 0 5rem;
+}
+.second-inner-right {
+    flex: 1;
+    height: 17rem;
+}
+.second > div > div {
+    padding: 0 2rem;
+    color: #cfcf;
+}

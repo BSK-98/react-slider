@@ -1,14 +1,11 @@
 import './App.css';
-import Appbar from './components/global/Appbar';
-import ImageSlider from './components/slider/ImageSlider';
-import InfoSlider from './components/slider/InfoSlider';
+import About from './components/about/About';
+
 
 function App() {
   return (
     <div className="App">
-      <Appbar / >
-      <ImageSlider />
-      <InfoSlider />
+      <About />
     </div>
   );
 }

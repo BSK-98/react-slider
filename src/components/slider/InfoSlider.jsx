@@ -8,7 +8,7 @@ import 'swiper/css/autoplay';
 import './slider.css';
 
 import slideShowData from './../../assets/slider-data/slideshow'
-const delayActive = 2300;
+const delayActive = 2000;
 
 
 const InfoSlider = () => {const [active, setActive] = useState(false);

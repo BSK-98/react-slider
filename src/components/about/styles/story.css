@@ -1,0 +1,22 @@
+.story {
+    min-height: 3rem;
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+    color: #141313;
+}
+.data {
+    padding: 0 6rem;
+}
+
+.data h2 {
+    text-transform: uppercase;
+    color: #151740;
+}
+.data > div {
+    padding: 1rem 6rem;
+    text-align: left;
+}
+.data > div > p {
+    margin-top: 2rem;
+}

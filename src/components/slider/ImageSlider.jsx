@@ -23,7 +23,6 @@ const Slider = () => {
                 autoplay={true}
                 className="slider-item"
                 >
-                    {console.log (images)}
                     {
                         images.map ((slide, index) => (
 
