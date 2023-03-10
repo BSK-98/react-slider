@@ -1,0 +1,83 @@
+header.appbar {
+    width: 100%;
+    color: #fcfcfc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 6.925rem;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+header.appbar .logo {
+    padding: .6rem;
+}
+header.appbar .logo a {
+    display: block;
+    width: 11rem;
+}
+header.appbar nav ul {
+    list-style-type: none;
+    display: flex;
+}
+header.appbar nav li {
+    border: solid transparent thin;
+    margin: 0 .1rem;
+    position: relative;
+    cursor: pointer;
+}
+header.appbar nav li a {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 500;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: .5rem 2rem;
+    transition: transform .3s ease-in-out;
+}
+header.appbar nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -.2rem;
+    left: 0;
+    width: 100%;
+    transform: scale(0);
+    height: .2rem;
+    background-color: royalblue;
+    transition: transform .5s ease-in-out;
+}
+header.appbar nav a:hover,
+header.appbar nav a.active  {
+    transform: translateX(.3rem);
+}
+header.appbar nav a:hover::after,
+header.appbar nav a.active::after {
+    transform: scale(1);
+}
+header.appbar > button {
+    padding: .1rem .5rem;
+    font-size: 1rem;
+    border: solid .5rem transparent;
+    text-transform: uppercase;
+    border-radius: .2rem;
+    background-color: #fcfcfc;
+    color: #00001a;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    header.appbar {
+        padding: unset;
+        padding: .5rem 3rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    header.appbar {
+        padding: unset;
+        padding: 1rem;
+    }
+    header.appbar nav {
+        display: none;
+    }
+}

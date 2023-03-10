@@ -1,0 +1,131 @@
+.slider .slider-item {
+    height: 100vh;
+    background-color: #00001a;
+}
+.slider .slider-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slider {
+    background-color: #00001a;
+}
+.info-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 50%;
+    padding-left: 7.6rem;
+    padding-top: 7rem;
+    z-index: 10;
+    /* background-color: aqua; */
+}
+.slide h2 {
+    font-size: 2.6rem;
+    position: relative;
+    color: #fcfcfc;
+}
+.slide h2.active {
+    animation: text .6s forwards .5s;
+}
+.slide h2::after {
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    background-color: #fcfcfc;
+    height: .4rem;
+    width: 4rem;
+}
+.slide p {
+    margin-top: 3rem;
+    padding-right: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #fcfcfc;
+}
+
+.slide p.active {
+    animation: text .6s forwards 1.4s;
+}
+
+.btns {
+    padding-top: 3rem;
+}
+.btns button {
+    border: solid .2rem transparent;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: .2rem;
+    padding: .6rem 1.6rem;
+    background-color: #fcfcfc;
+    color: #00001a;
+    transition: transform .5s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+}
+.btns button:last-child {
+    margin-left: 1rem;
+    background-color: transparent;
+    border-color: royalblue;
+    color: #fcfcfc;
+}
+.btns button:hover {
+    transform: translateX(.5rem);
+}
+
+@keyframes text {
+    0% {
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btns button:last-child {
+        margin: unset;
+        margin-top: 1rem;
+    }
+    .btns button {
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .info-slider {
+        padding: unset;
+        padding: 8.7rem 4rem;
+        width: 100%;
+    }
+    .slide h2 {
+        font-size: 1.4rem;
+    }
+    .btns {
+        display: flex;
+        flex-direction: column;
+    }
+    .btns button:last-child {
+        margin: unset;
+        margin-top: 1rem;
+    }
+    .btns button {
+        width: 94%;
+    }
+}
